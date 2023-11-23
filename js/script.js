@@ -5,12 +5,6 @@
 })(jQuery);
 
 
-$(document).on('click', function(){
-   var audio = document.getElementById("my_audio");
-    // Play the audio
-    audio.play();
-});
-
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 25, 2023 12:26:00").getTime();
 
@@ -72,3 +66,17 @@ var styles2 = [
 ].join(';');
 
 
+var audio = document.getElementById("my_audio");
+var musicControl = document.getElementById("music-control");
+
+musicControl.addEventListener('click', function() {
+   if (audio.paused) {
+      audio.play();
+      musicControl.classList.remove('paused');
+      musicControl.classList.add('playing');
+   } else {
+      audio.pause();
+      musicControl.classList.remove('playing');
+      musicControl.classList.add('paused');
+   }
+});

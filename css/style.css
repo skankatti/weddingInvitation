@@ -572,8 +572,32 @@ a {
 	display: none;
 }
 
+
 .actions {
 	display: flex;
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
+
+
+
+.music-control {
+	cursor: pointer;
+	font-size: 14px; /* Adjust the font size as needed */
+	color: #8b5cf6; /* Light purple color, adjust as needed */
+	margin-top: 10px; /* Adjust the margin as needed */
+ }
+ 
+ .music-control i {
+	margin: 0;
+ }
+ 
+ /* Styling for the play icon */
+ .music-control.paused i::before {
+	content: '\f04b'; /* Play icon */
+ }
+ 
+ /* Styling for the pause icon */
+ .music-control.playing i::before {
+	content: '\f04c'; /* Pause icon */
+ }
