@@ -579,8 +579,6 @@ a {
 	letter-spacing: 0pt;
 }
 
-
-
 .music-control {
 	cursor: pointer;
 	font-size: 14px; /* Adjust the font size as needed */
@@ -594,10 +592,10 @@ a {
  
  /* Styling for the play icon */
  .music-control.paused i::before {
-	content: '\f04b'; /* Play icon */
+	content: '\25B6'; /* Unicode for play symbol */
  }
  
  /* Styling for the pause icon */
  .music-control.playing i::before {
-	content: '\f04c'; /* Pause icon */
+	content: '\II'; /* Unicode for pause symbol */
  }
